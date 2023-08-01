@@ -1,4 +1,46 @@
-* {
-  font-family: "Plus Jakarta Sans", sans-serif;
-  background-color: aqua;
+:root {
+  --font-family: "Plus Jakarta Sans", sans-serif;
+  --text-color: #1a1c20;
+  --primary-color: #51443d;
+  --secondary-color: #a7958b;
+  --main-background-color: #f6f4f3;
+}
+
+/* Body */
+body {
+  font-family: var(--font-family);
+  color: var(--text-color);
+  background-color: var(--main-background-color);
+}
+
+/* Buttons */
+.btn {
+  border-radius: 8px;
+  background: var(--primary-color);
+}
+/* Navigation */
+.nav-link {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 175.7%; /* 28.112px */
+  text-transform: capitalize;
+  color: var(--text-color);
+}
+
+.nav-item:hover{
+  background-color: var(--secondary-color);
+  opacity: .7;
+  border-radius: 1em;
+}
+
+.navbar-nav{
+  display: flex;
+  
+}
+
+/* Dark Mode button and toggle */
+.dark-mode{
+  background-color: var(--text-color);
+  color: var(--main-background-color);
 }

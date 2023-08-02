@@ -13,11 +13,54 @@ body {
   background-color: var(--main-background-color);
 }
 
+
+h2,h3{
+    letter-spacing: 0.9px;
+    font-weight: 800;
+    line-height: 163.15%;
+}
+
+h1{
+  align-self: stretch;
+  font-size: 48px;
+  font-weight: 800;
+}
+
+h3{
+  color: #51443D;
+  font-size: 30px;
+  text-decoration-line: underline;
+}
+
+h2{
+  font-size: 36px;
+  font-weight: 800;
+}
+
+h4{
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+}
+
+p{
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 163.15%;
+  letter-spacing: 0.54px;
+}
+
 /* Buttons */
 .btn {
   border-radius: 8px;
   background: var(--primary-color);
 }
+
+.btn-primary{
+  width: 152px;
+  height: 56px;
+}
+
 /* Navigation */
 .nav-link {
   font-size: 16px;
@@ -34,13 +77,53 @@ body {
   border-radius: 1em;
 }
 
-.navbar-nav{
-  display: flex;
-  
+/* Navigation for mobile devices */
+@media (max-width: 1150px){
+  .navbar-collapse{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: hsla(0, 0%, 0%, .75);
+    width: 100%;
+    backdrop-filter: blur(8px);
+    transition: top .4;
+  }
 }
 
 /* Dark Mode button and toggle */
 .dark-mode{
   background-color: var(--text-color);
   color: var(--main-background-color);
+}
+
+/* Home Section */
+.icons{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20rem;
+}
+
+.icons a{
+  color: var(--secondary-color);
+}
+
+.icons a:hover{
+  color: #51443D;
+}
+
+.btn-label{
+  padding-right: 5px;
+}
+
+.heading{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.94rem;
+  padding-top: 10rem;
+}
+
+.hero-image{
+  padding-top: 4rem;
 }

@@ -32,50 +32,123 @@
   </head>
 
   <body>
+    <!--==================== HEADER ====================-->
+      <header class="header" id="header">
+        <nav class="navbar navbar-expand-lg bg-none">
+          <div class="container-xxl pt-3">
+            <a class="navbar-brand" href="index.html">
+              <img src="media/logo.svg" alt="logo"/>
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarContent"
+              aria-controls="navbarContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+              style="border-color: #f6f6f6"
+            >
+              <span class="navbar-toggler-icon ms-auto"></span>
+            </button>
+            <div class="collapse navbar-collapse text-center" id="navbarContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item pe-2 ps-2">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+
+                <li class="nav-item pe-2 pe-2 ps-2">
+                  <a class="nav-link" href="#about-me">About Me</a>
+                </li>
+
+                <li class="nav-item pe-2 pe-2 ps-2">
+                  <a class="nav-link" href="#portfolio">Portfolio</a>
+                </li>
+
+                <li class="nav-item pe-2 ps-2">
+                  <a class="nav-link" href="#contact-me">Contact Me</a>
+                </li>
+              </ul>
+              <button onclick="darkMode()" style="background-color: #f6f4f3; border: none">
+                <i class="fa-solid fa-circle-half-stroke fa-rotate-180 fa-xl pe-2"></i>
+              </button>
+            </div>
+          </div>
+        </nav> 
+      </header>
+
     <!-- Navigation Bar-->
-    <nav class="navbar navbar-expand-lg bg-none">
-      <div class="container-xxl pt-3">
-        <a class="navbar-brand" href="index.html"
-          ><img src="media/logo.svg" alt="logo"
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarContent"
-          aria-controls="navbarContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-          style="border-color: #f6f6f6"
-        >
-          <span class="navbar-toggler-icon ms-auto"></span>
-        </button>
-        <div class="collapse navbar-collapse text-center" id="navbarContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item pe-2 ps-2">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item pe-2 pe-2 ps-2">
-              <a class="nav-link" href="index.html#about-me">About Me</a>
-            </li>
-            <li class="nav-item pe-2 pe-2 ps-2">
-              <a class="nav-link" href="index.html#services">Services</a>
-            </li>
-            <li class="nav-item pe-2 pe-2 ps-2">
-              <a class="nav-link" href="index.html#portfolio">Portfolio</a>
-            </li>
-            <li class="nav-item pe-2 ps-2">
-              <a class="nav-link" href="index.html#contact-me">Contact Me</a>
-            </li>
-          </ul>
-          <button onclick="darkMode()" style="background-color: #f6f4f3; border: none;">
-            <i
-              class="fa-solid fa-circle-half-stroke fa-rotate-180 fa-xl pe-2"
-            ></i>
-          </button>
-        </div>
-      </div>
-    </nav>
+    
+
+      
+      <!--==================== MAIN ====================-->
+      <main class="main">
+         <!--==================== HOME ====================-->
+         <section class="home-section" id="home">
+            <div class="container-xxl pt-3">
+              <div class="row">
+                <div class="col-1 icons">
+                  <a href="http://github.com/JuliaLavagnini" target="_blank">
+                    <i class="fa-brands fa-github fa-2xl pb-5"></i>
+                  </a>
+                  <a href="https://www.linkedin.com/in/julialavagnini/" target="_blank">
+                    <i class="fa-brands fa-linkedin fa-2xl"></i>
+                  </a>
+                </div>
+                <div class="col-6 col-md-5 heading">
+                  <p>Hi, my name is Julia.</p>
+                  <h1>I am a Web Developer, based in London.</h1>
+                  <p style="font-weight: 600;">I’m a junior web developer, based in London. I do design and development of Web applications.</p>
+                  <button type="button" class="btn btn-primary">
+                    <span class="btn-label"><i class="fa-regular fa-paper-plane"></i></span>
+                    Contact me
+                  </button>
+                </div>
+                <div class="col-5 col-sm-5 ">
+                  <img class="hero-image img-fluid" src="media/hero-image.png" alt="animation version of me">
+                </div>
+              </div>
+              
+            </div>
+         </section>
+
+         <!--==================== ABOUT ====================-->
+         <section class="about section" id="about">
+            
+         </section>
+
+         <!--==================== SERVICES ====================-->
+         <section class="services section">
+            
+         </section>
+
+         <!--==================== PROJECTS ====================-->
+         <section class="projects section" id="projects">
+            
+         </section>
+
+         <!--==================== CONTACT ====================-->
+         <section class="contact section" id="contact">
+            
+         </section>
+      </main>
+
+      <!--==================== FOOTER ====================-->
+      <footer class="footer">
+         
+      </footer>
+
+      <!--========== SCROLL UP ==========-->
+      
+
+      <!--=============== SCROLLREVEAL ===============-->
+      <script src=""></script>
+      
+      <!--=============== EMAIL JS ===============-->
+      
+
+      <!--=============== MAIN JS ===============-->
+      <script src="assets/js/main.js"></script>
 
     <!--JS-->
     <script src="src/script.js"></script>

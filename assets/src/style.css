@@ -55,8 +55,13 @@ p{
 
 /* Buttons */
 .btn {
+  border: #51443D;
   border-radius: 8px;
   background: var(--primary-color);
+}
+
+.btn:hover {
+  background: #b39383;
 }
 
 .btn-primary{

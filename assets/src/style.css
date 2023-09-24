@@ -88,7 +88,31 @@ h4 {
   border-radius: 1em;
 }
 
-/* Navigation for mobile devices */
+/* Home Section */
+.home-section {
+  background-color: #d7e0ff;
+  width: 1480px;
+  height: 744px;
+  position: relative;
+  left: 20px;
+  z-index: 0;
+}
+
+.home-section p {
+  padding-top: 24px;
+  padding-bottom: 54px;
+}
+
+.heading {
+  padding-top: 10rem;
+}
+
+.hero-image {
+  padding-top: 4rem;
+  width: 60vh;
+}
+
+/* Navigation for mobile devices
 @media (max-width: 1150px){
   .navbar-collapse{
     position: fixed;
@@ -101,40 +125,4 @@ h4 {
   }
 }
 
-/* Dark Mode button and toggle */
-.dark-mode{
-  background-color: var(--text-color);
-  color: var(--main-background-color);
-}
-
-/* Home Section */
-.icons{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 20rem;
-}
-
-.icons a{
-  color: var(--secondary-color);
-}
-
-.icons a:hover{
-  color: #51443D;
-}
-
-.btn-label{
-  padding-right: 5px;
-}
-
-.heading{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 1.94rem;
-  padding-top: 10rem;
-}
-
-.hero-image{
-  padding-top: 4rem;
-}
+*/

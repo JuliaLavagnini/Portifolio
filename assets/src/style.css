@@ -65,21 +65,26 @@ h4 {
   }
 }
 
-}
-
 /* Navigation */
-.nav-link {
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 175.7%; /* 28.112px */
-  text-transform: capitalize;
-  color: var(--text-color);
+.navbar {
+  z-index: 1;
+  position: relative;
+  top: 33px;
+  padding-left: 63px;
+  padding-right: 63px;
 }
 
-.nav-item:hover{
+.nav-link {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: lowercase;
+}
+
+.nav-item:hover {
   background-color: var(--secondary-color);
-  opacity: .7;
+  opacity: 0.7;
   border-radius: 1em;
 }
 

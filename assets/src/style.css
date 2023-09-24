@@ -1,9 +1,8 @@
 :root {
-  --font-family: "Plus Jakarta Sans", sans-serif;
-  --text-color: #1a1c20;
-  --primary-color: #51443d;
-  --secondary-color: #a7958b;
-  --main-background-color: #f6f4f3;
+  --font-family: "Mulish", sans-serif;
+  --text-color: #141518;
+  --secondary-color: #ffabe7;
+  --Background-section: #d7e0ff;
 }
 
 /* Body */

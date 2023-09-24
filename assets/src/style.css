@@ -23,11 +23,14 @@ h3 {
   line-height: normal;
 }
 
-h1 {
+h1,h2,h3{
   font-family: "Abril Fatface", cursive;
   align-self: stretch;
-  font-size: 50px;
   line-height: normal;
+}
+
+h1 {
+  font-size: 50px;
 }
 
 h3 {
@@ -55,6 +58,7 @@ h4 {
   border-radius: 0;
   transition: all 0.15s linear 0s;
   box-shadow: 6px 6px rgba(0, 0, 0, 0.4);
+  color: #fff;
 
   &:hover {
     top: 3px;
@@ -110,6 +114,35 @@ h4 {
 .hero-image {
   padding-top: 4rem;
   width: 60vh;
+}
+
+.about-me{
+  padding-top: 150px;
+}
+
+.about-me img{
+  width: 15rem;
+}
+
+.about-me .BD{
+  padding-top: 30px;
+}
+
+.about-me i {
+  margin-left: 25px;
+  padding: 25px 10px;
+  border: 1px solid #c3c3c4;
+  border-radius: 5px;
+}
+
+.about-me span{
+  font-size: 14px;
+  font-weight: 800;
+}
+
+b{
+  font-weight: 800;
+  font-size: 20px;
 }
 
 /* Navigation for mobile devices

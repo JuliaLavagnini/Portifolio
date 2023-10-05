@@ -152,17 +152,3 @@ h4 {
 
 }
 
-/* Navigation for mobile devices
-@media (max-width: 1150px){
-  .navbar-collapse{
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: hsla(0, 0%, 0%, .75);
-    width: 100%;
-    backdrop-filter: blur(8px);
-    transition: top .4;
-  }
-}
-
-*/

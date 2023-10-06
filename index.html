@@ -22,6 +22,9 @@
       crossorigin=""
     />
 
+    <!--Favicon-->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
     <!--Boostrap-->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
@@ -50,8 +53,9 @@
   </head>
 
   <body>
-    <!--==================== HEADER ====================-->
-    <nav class="navbar navbar-expand-lg bg-none">
+    <!--HEADER + NAV-->
+    <header>
+      <nav class="navbar navbar-expand-lg bg-none">
       <div class="container-xxl pt-1">
         <a class="navbar-brand" href="index.html">
           <img src="assets/media/logo.svg" alt="logo" />
@@ -73,24 +77,21 @@
           id="navbarContent"
         >
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item pe-2 ps-2">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
 
-            <li class="nav-item pe-2 pe-2 ps-2">
-              <a class="nav-link" href="#about-me"
+            <li class="nav-item pe-2 pe-2 ps-2 ">
+              <a class="nav-link pink-link" href="#about-me"
                 >About Me</a
               >
             </li>
 
             <li class="nav-item pe-2 pe-2 ps-2">
-              <a class="nav-link" href="#portfolio"
+              <a class="nav-link pink-link" href="#projectsSeciton"
                 >Portfolio</a
               >
             </li>
 
             <li class="nav-item pe-2 ps-2">
-              <a class="nav-link" href="#contact-me"
+              <a class="nav-link pink-link" href="#contact"
                 >Contact Me</a
               >
             </li>
@@ -98,6 +99,8 @@
         </div>
       </div>
     </nav>
+    </header>
+    
     <!--==================== MAIN ====================-->
     <main class="main">
       <!--==================== HOME ====================-->
@@ -108,18 +111,23 @@
           >
             <div class="col-lg-5 col-sm-5 heading">
               <h1>
-                Hi, I’m Julia,<br />
-                Front-end Developer
+                Hi, I’m Julia Lavagnini,
+                <span class="highlight-box">
+                  <span class="highlight">
+                    Front-end Developer
+                  </span>
+                </span>
+                
               </h1>
               <p style="font-weight: 400">
-                I design and build beautiful websites for
-                businesses around <br />the globe. If you
+                I design and build beautiful web applications for
+                businesses around the globe. If you
                 need a modern and powerful website,<br />
                 send me an email. If we are a good fit, I
                 will give you a time <br />and cost
                 estimate.
               </p>
-              <a href="" class="button home">See my work</a>
+              <a href="#projectsSeciton" class="button home">See my work</a>
             </div>
             <div class="col-lg-5 col-sm-6">
               <img
@@ -132,7 +140,7 @@
         </div>
       </section>
       <!--==================== ABOUT ME ====================-->
-      <section class="about-me">
+      <section class="about-me" id="about-me">
         <div class="container-xxl">
           <h2>About Me</h2>
           <div
@@ -167,7 +175,7 @@
                 </li>
               </ul>
               <div class="BD align-items-center">
-                <a href="" class="button">Contact me</a>
+                <a href="#contact" class="button">Contact me</a>
                 <a
                   href="assets/href/Julia Lavagnini resume version may2023 JB.pdf"
                   download="Julia Lavagnini Resume"
@@ -241,12 +249,12 @@
                     alt="chat-website"
                     class="project-img"
                   />
-                  <a href="" class="projects-button button">
+                  <a href="https://we-chat-app.webflow.io/" class="projects-button button" target="_blank">
                     <i class="ri-arrow-right-up-line"></i>
                   </a>
                 </div>
                 <div class="project-content">
-                  <h3 class="subtitle">Website</h3>
+                  <h3 class="subtitle">Website (Webflow)</h3>
                   <h2>WeChat</h2>
                   <p>
                     This is a homepage design and build for
@@ -255,19 +263,10 @@
                     later built a responsive page in
                     Webflow.
                   </p>
-                  <div class="project-button">
-                    <a
-                      href=""
-                      target="_blank"
-                      class="project-link"
-                    >
-                      <i class="ri-github-line"></i>View
-                    </a>
-                  </div>
                 </div>
               </article>
             </div>
-
+            <!--
             <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
               <article class="project-card">
                 <div class="project-image">
@@ -276,7 +275,7 @@
                     alt="chat-website"
                     class="project-img"
                   />
-                  <a href="" class="projects-button button">
+                  <a href="" class="projects-button button" target="_blank">
                     <i class="ri-arrow-right-up-line"></i>
                   </a>
                 </div>
@@ -302,7 +301,7 @@
                 </div>
               </article>
             </div>
-
+            -->
             <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
               <article class="project-card">
                 <div class="project-image">
@@ -311,7 +310,7 @@
                     alt="chat-website"
                     class="project-img"
                   />
-                  <a href="" class="projects-button button">
+                  <a href="https://vermillion-daifuku-d8324b.netlify.app/" class="projects-button button" target="_blank">
                     <i class="ri-arrow-right-up-line"></i>
                   </a>
                 </div>
@@ -319,15 +318,13 @@
                   <h3 class="subtitle">App</h3>
                   <h2>Weather</h2>
                   <p>
-                    This is a homepage design and build for
-                    a concept project – a chat application.
-                    I have designed the page first then
-                    later built a responsive page in
-                    Webflow.
+                    This is a app design and build for
+                    a concept project, a weather app.
+                    I have designed and build this web app using the three web programming tools.
                   </p>
                   <div class="project-button">
                     <a
-                      href=""
+                      href="https://github.com/JuliaLavagnini/Weather-App-v2"
                       target="_blank"
                       class="project-link"
                     >
@@ -346,7 +343,7 @@
                     alt="chat-website"
                     class="project-img"
                   />
-                  <a href="" class="projects-button button">
+                  <a href="https://grand-bienenstitch-48e85b.netlify.app/" class="projects-button button" target="_blank">
                     <i class="ri-arrow-right-up-line"></i>
                   </a>
                 </div>
@@ -354,15 +351,13 @@
                   <h3 class="subtitle">Website</h3>
                   <h2>Trip.</h2>
                   <p>
-                    This is a homepage design and build for
-                    a concept project – a chat application.
-                    I have designed the page first then
-                    later built a responsive page in
-                    Webflow.
+                    This is a full website design and build for
+                    a concept project, a travel agency.
+                    I have designed and built a fully a responsive page HTML5, CSS3, JavaScript and Bootsrap 5.
                   </p>
                   <div class="project-button">
                     <a
-                      href=""
+                      href="https://github.com/JuliaLavagnini/TRIP.-travel-agency-website"
                       target="_blank"
                       class="project-link"
                     >
@@ -377,16 +372,16 @@
               <article class="project-card">
                 <div class="project-image">
                   <img
-                    src="assets/media/Chat-App.jpg"
+                    src="assets/media/Team.jpg"
                     alt="chat-website"
                     class="project-img"
                   />
-                  <a href="" class="projects-button button">
+                  <a href="https://goteam-f6291a.webflow.io/" class="projects-button button" target="_blank">
                     <i class="ri-arrow-right-up-line"></i>
                   </a>
                 </div>
                 <div class="project-content">
-                  <h3 class="subtitle">Website</h3>
+                  <h3 class="subtitle">Website (Webflow)</h3>
                   <h2>Team</h2>
                   <p>
                     A full website design and build for a
@@ -396,15 +391,6 @@
                     blog in Webflow which has one of the
                     best CMS for blog hosting.
                   </p>
-                  <div class="project-button">
-                    <a
-                      href=""
-                      target="_blank"
-                      class="project-link"
-                    >
-                      <i class="ri-github-line"></i>View
-                    </a>
-                  </div>
                 </div>
               </article>
             </div>
@@ -470,24 +456,24 @@
     <footer class="footer-section">
       <div class="container-xxl">
         <div class="row justify-content-evenly">
-          <div class="col">
-            <div>
-              <h2 class="footer-title">Julia Lavagnini</h2>
+          <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+            <div class="d-flex logo-footer">
+              <img src="assets/media/logo.svg" alt="logo"/>
               <span>Front-end developer</span>
             </div>
           </div>
-          <div class="col">
+          <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
             <ul class="footer-link">
-              <li><a href="">Portfolio</a></li>
-              <li><a href="">Contact me</a></li>
+              <li><a href="#projectsSeciton" class="pink-link">Portfolio</a></li>
+              <li><a href="#contact" class="pink-link">Contact me</a></li>
             </ul>
           </div>
-          <div class="col">
+          <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
             <div class="footer-icons d-flex">
-              <a href="" target="_blank">
+              <a href="https://www.linkedin.com/in/julialavagnini/" target="_blank">
                 <i class="fa-brands fa-linkedin-in fa-xl" style="color: #000000;"></i>
               </a>
-              <a href="" target="_blank">
+              <a href="https://github.com/JuliaLavagnini" target="_blank">
                 <i class="fa-brands fa-github fa-xl" style="color: #000000;"></i>
               </a>
             </div>

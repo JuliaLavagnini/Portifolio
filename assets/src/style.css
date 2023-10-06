@@ -260,10 +260,16 @@ h4 {
 
 .contact {
   max-width: 10rem; 
+  border: 0;
+  border-radius: 0;
 }
 
 .contact-section {
   padding-top: 150px;
+}
+
+.contact-message {
+  color: var(--text-color);
 }
 
 /* Footer section */

@@ -149,8 +149,8 @@ h4 {
 }
 
 .about-me img {
-  border-radius: 10rem;
-  width: 20rem;
+  border-radius: 20rem;
+  width: 30rem;
 }
 
 .about-me .BD {
@@ -263,6 +263,10 @@ h4 {
   padding-left: 10px;
 }
 
+.contact-info p{
+  margin-bottom: .0;
+}
+
 .contact-info i {
   margin-right: 0.75rem;
   font-size: 2rem;
@@ -305,13 +309,6 @@ h4 {
   padding: 3rem 0 5rem 0;
 }
 
-.ownership{
-  position: relative;
-  top: 5rem;
-  text-align: center;
-  color: rgba(0, 0, 0, 0.4);
-}
-
 .footer-link a{
   text-decoration: none;
   color: var(--text-color);
@@ -322,7 +319,15 @@ h4 {
   list-style: none;
   display: flex;
   column-gap: 2rem;
+  justify-content: center;
  
+}
+
+.ownership{
+  position: relative;
+  top: 5rem;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.4);
 }
 
 .logo-footer{
@@ -334,7 +339,7 @@ h4 {
   width: 13%;
 }
 
-/** Small devices (landscape phones, 576px and up)*/
+/** Small devices (landscape phones, 576px and down)*/
 @media (max-width: 576px) {
   /** heading*/
   h1{
@@ -391,18 +396,83 @@ h4 {
   margin-bottom: 30px;
 }
 
-.contact-info p{
-  margin-bottom: .0;
+/**footer*/
+.footer-link, .footer-icons{
+  justify-content: flex-start;
 }
 
-/**footer*/
 .footer-link{
   padding-left: 0;
 }
+
 }
 
-/** Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) { ... }
+/** Medium devices (tablets, 768px and down) */
+@media (max-width: 768px) {
+  .container-xxl{
+    max-width: 666px;
+  }
+
+  /**heading*/
+  .hero-image{
+    width: 24vh;
+    padding-top: 0px;
+  }
+
+  .heading {
+    padding-top: 2rem;
+  }
+
+  h1{
+    font-size: 32px;
+  }
+
+  .home-section p {
+    font-size: 16px;
+    padding-top: 15px;
+    padding-bottom: 30px;
+  }
+ 
+ .home {
+    margin-bottom: 40px;
+ }
+ 
+ /**about*/
+ .about-me img{
+    width: 20rem;
+ }
+  
+ .about-me p{
+    font-size: 16px
+ }
+
+ /**project*/
+ .subtitle {
+    font-size: 14px;}
+
+ /**footer*/
+
+ .footer-section {
+    padding: 3rem 0 3rem 0;
+}
+
+.ownership{
+  top: 2rem;
+}
+
+
+.footer-link a{
+  font-size: 14px;
+}
+
+ .footer-icons{
+  justify-content: flex-end;
+ }
+
+ }
+
+
+ 
 
 /** Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { ... }

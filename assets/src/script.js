@@ -6,9 +6,9 @@ const contactMessage = document.getElementById(
 const sendEmail = (e) => {
   e.preventDefault();
 
-  /** Use try-catch for better error handling */ 
+  /** Use try-catch for better error handling */
   try {
-    /** Use template literals for better readability */ 
+    /** Use template literals for better readability */
     emailjs
       .sendForm(
         "service_7a1qhxh",
@@ -27,18 +27,18 @@ const sendEmail = (e) => {
             contactMessage.textContent = "";
           }, 5000);
 
-          /** Clear input fields */ 
+          /** Clear input fields */
           contactForm.reset();
         },
         () => {
-          /** Show error message */ 
+          /** Show error message */
           contactMessage.textContent =
             "There was an error, message not sent (service error) ❌";
         }
       );
   } catch (error) {
     console.error("Error sending email:", error);
-    /** Show a generic error message to the user */ 
+    /** Show a generic error message to the user */
     contactMessage.textContent =
       "There was an error, message not sent ❌";
   }

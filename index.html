@@ -6,26 +6,34 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
+    <title>Julia Lavagnini - Front-end Developer</title>
 
-    <!--SEO-->
+    <meta
+      name="description"
+      content="This is my personal front-end developer portfolio."
+    />
 
-    <!--Font Anwsome-->
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      href="assets/media/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <!-- Font Awesome -->
     <script
       src="https://kit.fontawesome.com/1d40a1c82f.js"
       crossorigin="anonymous"
     ></script>
 
-    <!--Remixicon-->
+    <!-- Remixicon -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css"
       crossorigin=""
     />
 
-    <!--Favicon-->
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
-
-    <!--Boostrap-->
+    <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -33,7 +41,7 @@
       crossorigin="anonymous"
     />
 
-    <!--Google Font-->
+    <!-- Google Fonts -->
     <link
       rel="preconnect"
       href="https://fonts.googleapis.com"
@@ -47,69 +55,68 @@
       href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Mulish:wght@200;300;400;500;600;700;800;900;1000&display=swap"
       rel="stylesheet"
     />
-    <!--CSS-->
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/src/style.css" />
-    <title>Document</title>
   </head>
 
   <body>
     <!--HEADER + NAV-->
     <header>
       <nav class="navbar navbar-expand-lg bg-none">
-      <div class="container-xxl pt-1">
-        <a class="navbar-brand" href="index.html">
-          <img src="assets/media/logo.svg" alt="logo" />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarContent"
-          aria-controls="navbarContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-          style="border-color: #f6f6f6"
-        >
-          <span class="navbar-toggler-icon ms-auto"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse text-center"
-          id="navbarContent"
-        >
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <div class="container-xxl pt-1">
+          <a class="navbar-brand" href="index.html">
+            <img src="assets/media/logo.svg" alt="logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarContent"
+            aria-controls="navbarContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            style="border-color: #f6f6f6"
+          >
+            <span
+              class="navbar-toggler-icon ms-auto"
+            ></span>
+          </button>
+          <div
+            class="collapse navbar-collapse text-center"
+            id="navbarContent"
+          >
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item pe-2 pe-2 ps-2">
+                <a
+                  class="nav-link pink-link"
+                  href="#projectsSeciton"
+                  >Portfolio</a
+                >
+              </li>
 
-            <li class="nav-item pe-2 pe-2 ps-2 ">
-              <a class="nav-link pink-link" href="#about-me"
-                >About Me</a
-              >
-            </li>
-
-            <li class="nav-item pe-2 pe-2 ps-2">
-              <a class="nav-link pink-link" href="#projectsSeciton"
-                >Portfolio</a
-              >
-            </li>
-
-            <li class="nav-item pe-2 ps-2">
-              <a class="nav-link pink-link" href="#contact"
-                >Contact Me</a
-              >
-            </li>
-          </ul>
+              <li class="nav-item pe-2 ps-2">
+                <a
+                  class="nav-link pink-link"
+                  href="#contact"
+                  >Contact Me</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
     </header>
-    
+
     <!--==================== MAIN ====================-->
     <main class="main">
       <!--==================== HOME ====================-->
       <section class="home-section" id="home">
-        <div class="container-xxl">
+        <div class="container-fluid">
           <div
             class="row gy-5 gx-4 align-items-center justify-content-evenly"
           >
-            <div class="col-lg-7 col-sm-6 heading">
+            <div class="col-lg-5 col-sm-6 heading">
               <h1>
                 Hi, I’m Julia Lavagnini,
                 <span class="highlight-box">
@@ -117,23 +124,26 @@
                     Front-end Developer
                   </span>
                 </span>
-                
               </h1>
-              <p style="font-weight: 400">
-                I design and build beautiful web applications for
-                businesses around the globe. If you
-                need a modern and powerful website,
-                send me an email. If we are a good fit, I
-                will give you a time and cost
+              <p style="font-weight: 400; font-size: 20px">
+                I design and build beautiful web
+                applications for businesses around the
+                globe. If you need a modern and powerful
+                website, send me an email. If we are a good
+                fit, I will give you a time and cost
                 estimate.
               </p>
-              <a href="#projectsSeciton" class="button home">See my work</a>
+              <a href="#projectsSeciton" class="button home"
+                >See my work</a
+              >
             </div>
-            <div class="col-lg-4 col-sm-4 image-remove-query">
+            <div
+              class="col-lg-4 col-sm-4 image-remove-query"
+            >
               <img
                 class="hero-image"
-                src="assets/media/hero-image-min.png"
-                alt="animation version of me"
+                src="assets/media/hero-image.svg"
+                alt="animation"
               />
             </div>
           </div>
@@ -141,7 +151,7 @@
       </section>
       <!--==================== ABOUT ME ====================-->
       <section class="about-me" id="about-me">
-        <div class="container-xxl">
+        <div class="container-md">
           <h2>About Me</h2>
           <div
             class="row gy-5 gx-4 align-items-center justify-content-evenly"
@@ -153,19 +163,19 @@
               />
             </div>
             <div class="col-lg-5 col-sm-6">
-              <p>
+              <p style="font-size: 18px">
                 Passionate about creating
                 <b>Web Pages</b> with
                 <b>UI/UX interface</b>. A good and clinical
                 eye for modern designs.
               </p>
-              <p>
+              <p style="font-size: 18px" class="pt-3">
                 I started designing with developing web
                 pages as a hobby and become a passion after
                 watch YouTube tutorials and created others
                 pieces of works.
               </p>
-              <ul>
+              <ul class="pt-3">
                 <li>
                   My skills are:
                   <span
@@ -175,7 +185,9 @@
                 </li>
               </ul>
               <div class="BD align-items-center">
-                <a href="#contact" class="button">Contact me</a>
+                <a href="#contact" class="button"
+                  >Contact me</a
+                >
                 <a
                   href="assets/href/Julia Lavagnini resume version may2023 JB.pdf"
                   download="Julia Lavagnini Resume"
@@ -194,7 +206,7 @@
         class="projects-section"
         id="projectsSeciton"
       >
-        <div class="container-xxl">
+        <div class="container-md">
           <h2>Projects</h2>
           <div class="row pt-5 project-gallery">
             <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
@@ -205,12 +217,18 @@
                     alt="chat-website"
                     class="project-img"
                   />
-                  <a href="https://we-chat-app.webflow.io/" class="projects-button button" target="_blank">
+                  <a
+                    href="https://we-chat-app.webflow.io/"
+                    class="projects-button button"
+                    target="_blank"
+                  >
                     <i class="ri-arrow-right-up-line"></i>
                   </a>
                 </div>
                 <div class="project-content">
-                  <h3 class="subtitle">Website (Webflow)</h3>
+                  <h3 class="subtitle">
+                    Website (Webflow)
+                  </h3>
                   <h2>WeChat</h2>
                   <p>
                     This is a homepage design and build for
@@ -266,7 +284,11 @@
                     alt="chat-website"
                     class="project-img"
                   />
-                  <a href="https://vermillion-daifuku-d8324b.netlify.app/" class="projects-button button" target="_blank">
+                  <a
+                    href="https://vermillion-daifuku-d8324b.netlify.app/"
+                    class="projects-button button"
+                    target="_blank"
+                  >
                     <i class="ri-arrow-right-up-line"></i>
                   </a>
                 </div>
@@ -274,9 +296,10 @@
                   <h3 class="subtitle">App</h3>
                   <h2>Weather</h2>
                   <p>
-                    This is a app design and build for
-                    a concept project, a weather app.
-                    I have designed and build this web app using the three web programming tools.
+                    This is a app design and build for a
+                    concept project, a weather app. I have
+                    designed and build this web app using
+                    the three web programming tools.
                   </p>
                   <div class="project-button">
                     <a
@@ -299,7 +322,11 @@
                     alt="chat-website"
                     class="project-img"
                   />
-                  <a href="https://grand-bienenstitch-48e85b.netlify.app/" class="projects-button button" target="_blank">
+                  <a
+                    href="https://grand-bienenstitch-48e85b.netlify.app/"
+                    class="projects-button button"
+                    target="_blank"
+                  >
                     <i class="ri-arrow-right-up-line"></i>
                   </a>
                 </div>
@@ -307,9 +334,11 @@
                   <h3 class="subtitle">Website</h3>
                   <h2>Trip.</h2>
                   <p>
-                    This is a full website design and build for
-                    a concept project, a travel agency.
-                    I have designed and built a fully a responsive page HTML5, CSS3, JavaScript and Bootsrap 5.
+                    This is a full website design and build
+                    for a concept project, a travel agency.
+                    I have designed and built a fully a
+                    responsive page HTML5, CSS3, JavaScript
+                    and Bootsrap 5.
                   </p>
                   <div class="project-button">
                     <a
@@ -332,12 +361,18 @@
                     alt="chat-website"
                     class="project-img"
                   />
-                  <a href="https://goteam-f6291a.webflow.io/" class="projects-button button" target="_blank">
+                  <a
+                    href="https://goteam-f6291a.webflow.io/"
+                    class="projects-button button"
+                    target="_blank"
+                  >
                     <i class="ri-arrow-right-up-line"></i>
                   </a>
                 </div>
                 <div class="project-content">
-                  <h3 class="subtitle">Website (Webflow)</h3>
+                  <h3 class="subtitle">
+                    Website (Webflow)
+                  </h3>
                   <h2>Team</h2>
                   <p>
                     A full website design and build for a
@@ -355,53 +390,112 @@
       </section>
       <!--==================== CONTACT ====================-->
       <section class="contact-section" id="contact">
-        <div class="container-xxl">
+        <div class="container-md">
           <h2>Contact Me</h2>
-          <p
-            >If you need a modern and powerful front-end
+          <p>
+            If you need a modern and powerful front-end
             application for your business, startup or
-            personally, I am available for work.</p
-          >
+            personally, I am available for work.
+          </p>
           <div
             class="row align-items-center justify-content-center contact-forms"
           >
             <div class="col-lg-5 col-sm-6 extra-info">
               <div class="d-flex mb-2 contact-info">
-                <i class="fa-solid fa-phone" style="color: #000000;"></i>
+                <i
+                  class="fa-solid fa-phone"
+                  style="color: #000000"
+                ></i>
                 <div>
                   <p class="contanct-into-title">Call me</p>
                   <span>(+44) 752268-2114</span>
                 </div>
               </div>
               <div class="d-flex mb-2 contact-info">
-                <i class="fa-solid fa-envelope" style="color: #000000;"></i>
+                <i
+                  class="fa-solid fa-envelope"
+                  style="color: #000000"
+                ></i>
                 <div>
-                  <p class="contanct-into-title">Email me</p>
+                  <p class="contanct-into-title">
+                    Email me
+                  </p>
                   <span>julia.lavagninimaia@gmail.com</span>
                 </div>
               </div>
             </div>
             <div class="col-lg-5 col-sm-6">
-              <form action="" class="contact-form" id="contact-form">
+              <form
+                action=""
+                class="contact-form"
+                id="contact-form"
+              >
                 <div class="mb-3 contact-content-form">
-                  <label for="exampleInputEmail1" class="form-label">Name</label>
-                  <input type="text" class="form-control" name="user-name">
+                  <label
+                    for="exampleInputEmail1"
+                    class="form-label"
+                    >Name</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="user-name"
+                  />
                 </div>
                 <div class="mb-3 contact-content-form">
-                  <label for="exampleInputEmail1" class="form-label">Email</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="user-email">
-                  <div id="emailHelp" class="form-text">I'll never share your email with anyone else.</div>
+                  <label
+                    for="exampleInputEmail1"
+                    class="form-label"
+                    >Email</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                    name="user-email"
+                  />
+                  <div id="emailHelp" class="form-text">
+                    I'll never share your email with anyone
+                    else.
+                  </div>
                 </div>
                 <div class="mb-3 contact-content-form">
-                  <label for="exampleInputEmail1" class="form-label">Project</label>
-                  <input type="text" class="form-control" name="project-title">
+                  <label
+                    for="exampleInputEmail1"
+                    class="form-label"
+                    >Project</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="project-title"
+                  />
                 </div>
                 <div class="mb-3 contact-content-form">
-                  <label for="exampleInputEmail1" class="form-label">Message</label>
-                  <textarea name="message" id="" cols="0" rows="7" class="form-control"></textarea>
+                  <label
+                    for="exampleInputEmail1"
+                    class="form-label"
+                    >Message</label
+                  >
+                  <textarea
+                    name="message"
+                    id=""
+                    cols="0"
+                    rows="7"
+                    class="form-control"
+                  ></textarea>
                 </div>
-                <p class="contact-message" id="contact-message"></p>
-                <button type="submit" class="btn btn-primary button contact">Submit</button>
+                <p
+                  class="contact-message"
+                  id="contact-message"
+                ></p>
+                <button
+                  type="submit"
+                  class="btn btn-primary button contact"
+                >
+                  Submit
+                </button>
               </form>
             </div>
           </div>
@@ -410,44 +504,70 @@
     </main>
     <!--==================== FOOTER ====================-->
     <footer class="footer-section">
-      <div class="container-xxl">
+      <div class="container-md">
         <div class="row justify-content-evenly">
           <div class="col-sm-4 col-md-4 col-lg-4 mb-4">
             <div class="d-flex logo-footer">
-              <img src="assets/media/logo.svg" alt="logo"/>
+              <img src="assets/media/logo.svg" alt="logo" />
               <small>Front-end developer</small>
             </div>
           </div>
           <div class="col-sm-4 col-md-4 col-lg-4 mb-4">
             <ul class="footer-link">
-              <li><a href="#projectsSeciton" class="pink-link">Portfolio</a></li>
-              <li><a href="#contact" class="pink-link">Contact me</a></li>
+              <li>
+                <a href="#projectsSeciton" class="pink-link"
+                  >Portfolio</a
+                >
+              </li>
+              <li>
+                <a href="#contact" class="pink-link"
+                  >Contact me</a
+                >
+              </li>
             </ul>
           </div>
           <div class="col-sm-4 col-md-4 col-lg-4 mb-4">
             <div class="footer-icons d-flex">
-              <a href="https://www.linkedin.com/in/julialavagnini/" target="_blank">
-                <i class="fa-brands fa-linkedin-in fa-xl" style="color: #000000;"></i>
+              <a
+                href="https://www.linkedin.com/in/julialavagnini/"
+                target="_blank"
+              >
+                <i
+                  class="fa-brands fa-linkedin-in fa-xl"
+                  style="color: #000000"
+                ></i>
               </a>
-              <a href="https://github.com/JuliaLavagnini" target="_blank">
-                <i class="fa-brands fa-github fa-xl" style="color: #000000;"></i>
+              <a
+                href="https://github.com/JuliaLavagnini"
+                target="_blank"
+              >
+                <i
+                  class="fa-brands fa-github fa-xl"
+                  style="color: #000000"
+                ></i>
               </a>
             </div>
           </div>
-          <small class="ownership">Designed and Created by Julia Lavagnini</small>
+          <small class="ownership"
+            >Designed and Created by Julia Lavagnini</small
+          >
         </div>
       </div>
     </footer>
     <!--=============== EMAIL JS ===============-->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <!--=============== MAIN JS ===============-->
-    <script src="assets/src/script.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
 
-    <!--Boostrap JS-->
+    <!-- Boostrap JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"
     ></script>
+
+    <!-- JavaScript -->
+    <script src="assets/src/script.js"></script>
   </body>
 </html>
